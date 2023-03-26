@@ -1,54 +1,55 @@
-// function call invoke
-asif();
-
-// function  declare
-function asif(){
-    console.log('yuns tunner always front runners  ');
+//---------------function call---------
+function raza(){
+    console.log("my name is asif ");
 }
 
-// function assignment(named function)
-let stand =function addition(){
+raza();
 
-    console.log("addition naam hai  mera ");
 
+
+//------Function using let----------
+let jumpKar= function addition(){
+    console.log('this is my addition department');
+}
+jumpKar();
+
+
+
+
+//----------We an use without FUnction name(Anonymous FUnction )---
+let kurkure = function(){
+    console.log('this is subtraction department');
 }
 
-// addition(); -> for  these call its not working
-// for call->call stand
 
-stand();
-let jump = stand();
-
-// anonymous function
-let stand2 = function (){
-    console.log("ye substraction hai ");
-
-}
-stand2();
-
-let jump2 = stand2();
-
-function sum() {
-  let total = 0;
-  for (let value of arguments) 
-  total = total + value;
-  return total;
-}
-
-let raza = sum(1, 2,3,3,3,3,3,3,);
-console.log(raza);
+kurkure();
 
 
-//rest oeprator
-
-
-function rest(num,value,...args)
+//------Addition Using Function------
+function sum()
 {
-    console.log(args);
+    let total=0;
+    for(let value of arguments)
+       total+=value;
+       return total;
 }
+let stand = sum(1,2,3,3,3,3,3,3,3,3,3,3);
+console.log(stand);
 
 
-rest(1,2,2,3,3,4,5,6);
+
+
+//---function with rest Operator------
+//rest operator is use for list down int the form of array
+function rest(num,value,...arg)
+{
+    console.log(arg);
+}
+rest(1,2,3,4,5,6,7,8,9,0);
+
+
+
+
 
 
 
@@ -62,14 +63,14 @@ console.log(value(100,200,));
 
 
 
+// GETTER SETTER
+// getter -access properties
+// setter-change or mutate properties
 
-//GETTER SETTER
-//getter -access properties
-//setter-change or mutate properties
 
 let person = {
-    fname : "asif",
-    lname : "raza",
+    fname : 'asif',
+    lname : 'raza',
 
     get fullName(){
         return `${person.fname} ${person.lname}`;
@@ -79,17 +80,13 @@ let person = {
         this.fname = part[0];
         this.lname = part[1];
 
- 
     }
-};
-
-
-person.fullName = "Rahul Kumar";
+}
+person.fullName = 'Omar farooq';
 console.log(person.fullName);
 
 
-
-//-----TRY & CATCH (error HANDLING )-----
+// -----TRY & CATCH (error HANDLING )-----
 let a=1;
 try{
     a=string;
@@ -146,9 +143,6 @@ console.log(total);
 let totalSum = arr.reduce((accummulator,currentVAlue) => accummulator+currentVAlue,0);
 
 console.log(totalSum);
-
-
-
 
 
 
