@@ -7,4 +7,4 @@ JS DOM(1) - Here,In JS DOM(1) I learn how to create,delte,Update using JavaScrip
 
 
 
-JS DOM(4) - Here i learn DOM-4 promises,async function. and closur
+JS DOM(4) - Here i learn DOM-4 promises,async function.,Facth API  and closure.
